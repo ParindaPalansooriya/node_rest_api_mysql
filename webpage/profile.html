@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Test User Registation Api</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+        <div class="user">
+          <header class="user__header">
+              <img src="./images/logo.svg" alt="" />
+              <h1 style="text-align-last: center; color:white">Profile</h1>
+          </header>
+          
+          <!-- user login -->
+          <form id="profile_form" class="form" onsubmit="return false">
+              <h4 id="profile_error" style="text-align-last: right; display: none" class="text text_form">Please Fill All</h4>
+              <div class="form__group">
+                  <h4 id="profile_name" class="form__input">name</h4>
+              </div>
+
+              <div class="form__group">
+                  <h4 id="profile_email" class="form__input">Email</h4>
+              </div>
+              
+              <button id="profile_signout_btn" style="margin-top: 30px" class="btn" type="button">SingOut</button>
+              <button id="profile_remove_btn" style="margin-top: 10px" class="btn2" type="button">Remove Account</button>
+              <span>
+              <button id="profile_upload_btn" style="text-align-last: right" class="text2 text_form" type="button">Upload Files</button>
+              <button id="profile_download_btn" style="text-align-last: right" class="text2 text_form" type="button">Download Files</button>
+              </span>
+          </form>
+      </div>
+
+<!-- partial -->
+<script  src="./js/script_profile.js"></script>
+</body>
+</html>

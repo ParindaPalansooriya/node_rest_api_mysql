@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Test User Registation Api</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+        <div class="user">
+          <header class="user__header">
+              <img src="./images/logo.svg" alt="" />
+              <h1 style="text-align-last: center; color:white">Upload Files</h1>
+              <h3 id="upload_head" style="text-align-last: center; color:white">Please Select Your File</h3>
+          </header>
+          
+          <!-- user login -->
+          <form id="upload_form" class="form" onsubmit="return false">
+                <h4 id="upload_error" style="text-align-last: right; display: none" class="text text_form">Please Fill All</h4>
+                
+              <div class="form__group">
+                  <input id="upload_File" name="image" type="file" class="btn2"/>
+              </div>
+              <button id="upload_btn" style="margin-top: 30px" class="btn" type="button">Upload</button>
+              <span>
+              <button id="back_upload_btn" style="text-align-last: right" class="text2 text_form" type="button">Back to Profile</button>
+              </span>
+          </form>
+
+          <form id="thank_upload_form" class="form" style="display: none" onsubmit="return false">
+              <button id="upload_reupload_btn" style="margin-top: 30px" class="btn" type="button">Upload Again</button>
+              <button id="upload_back_pro_btn" style="margin-top: 10px" class="btn2" type="button">Back to Profile</button>
+          </form>
+
+
+      </div>
+
+<!-- partial -->
+<script  src="./js/script_upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Test User Registation Api</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="user">
+    <header class="user__header">
+        <img src="./images/logo.svg" alt="" />
+    </header>
+    
+    <!-- user login -->
+    <form id="login_form" class="form" onsubmit="return false">
+    
+        <h1 class="user__title">A lightweight and simple sign-up form</h1>
+        <h4 id="login_error" style="text-align-last: right" class="text text_form">Please Fill All</h4>
+
+        <div class="form__group">
+            <input id="login_email" type="email" placeholder="Email" class="form__input" />
+        </div>
+        
+        <div class="form__group">
+            <input id="login_pass" type="password" placeholder="Password" class="form__input"/>
+        </div>
+        
+        <button id="login_btn" class="btn" type="button">SingIn</button>
+        <span>
+        <button id="login_create_acc_btn" style="text-align-last: right" class="text text_form" type="button">Have not a Account?</button>
+        <button id="login_forgot_btn" style="text-align-last: right" class="text2 text_form" type="button">Forgot Password?</button>
+        </span>
+    </form>
+
+    <!-- user registation -->
+    <form id="reg_form" class="form"  style="display: none" onsubmit="return false">
+    
+            <h1 class="user__title">A lightweight and simple sign-up form</h1>
+            <h4 id="reg_error" style="text-align-last: right" class="text text_form">Please Fill All</h4>
+
+            <div class="form__group">
+                <input id="reg_name" type="text" placeholder="Username" class="form__input" />
+            </div>
+            
+            <div class="form__group">
+                <input id="reg_email" type="email" placeholder="Email" class="form__input" />
+            </div>
+            
+            <div class="form__group">
+                <input id="reg_pass" type="password" placeholder="Password" class="form__input" />
+            </div>
+
+            <div class="form__group">
+                    <input id="reg_con_pass" type="password" placeholder="Conform Password" class="form__input" />
+            </div>
+            
+            <button id="reg_btn" class="btn" type="button">Register</button>
+            <button id="reg_back_login_btn" style="text-align-last: right" class="text text_form" type="button">Back to LogIn</button>
+    </form>
+    
+</div>
+<!-- partial -->
+  <script  src="./js/script_index.js"></script>
+
+</body>
+</html>

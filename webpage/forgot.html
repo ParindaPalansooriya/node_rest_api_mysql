@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Test User Registation Api</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="user">
+    <header class="user__header">
+        <img src="./images/logo.svg" alt="" />
+    </header>
+
+    <!-- get email and send code -->
+    <form id="forgot_email_form" class="form" style="display: none" onsubmit="return false">
+    
+            <h1 class="user__title">A lightweight and simple sign-up form</h1>
+            <h4 id="forgot_email_error" style="text-align-last: right" class="text text_form">Please Fill All</h4>
+
+            <div class="form__group">
+                <input id="forgot_email" type="email" placeholder="Email" class="form__input" />
+            </div>
+            
+            <button id="forgot_send_btn" class="btn" type="button">Send Code</button>
+    </form>
+
+    <!-- check code -->
+    <form id="forgot_code_form" class="form" style="display: none" onsubmit="return false">
+    
+            <h1 class="user__title">A lightweight and simple sign-up form</h1>
+            <h4 id="forgot_code_error" style="text-align-last: right" class="text text_form">Please Fill All</h4>
+            
+            <div class="form__group">
+                <input id="forgot_code" type="text" placeholder="Code" class="form__input" />
+            </div>
+            <button id="forgot_submit_btn" class="btn" type="button">Submit</button>
+            <button id="forgot_resend_btn" style="text-align-last: right" class="text text_form" type="button">Resend Code</button>
+    </form>
+
+
+    <!-- change password -->
+    <form id="forgot_pass_form" class="form" onsubmit="return false" >
+    
+            <h1 class="user__title">A lightweight and simple sign-up form</h1>
+            <h4 id="forgot_pass_error" style="text-align-last: right" class="text text_form">Please Fill All</h4>
+            
+            <div class="form__group">
+                <input id="forgot_new_pass" type="password" placeholder="New Password" class="form__input" />
+            </div>
+
+            <div class="form__group">
+                <input id="forgot_con_new_pass" type="password" placeholder="Conform New Password" class="form__input" />
+            </div>
+            
+            <button id="forgot_change_pass_btn" class="btn" type="button">Change Password</button>
+    </form>
+
+
+
+</div>
+<!-- partial -->
+  <script  src="./js/script_forgot.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Test User Registation Api</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+        <div class="user">
+          <header class="user__header">
+              <img src="./images/logo.svg" alt="" />
+              <h1 style="text-align-last: center; color:white">Download List</h1>
+              <button id="back_profile" onclick="openProfile()" class="btn2" type="button">Back Profile</button>
+          </header>
+          
+          <!-- user login -->
+          <form id="download_list_form" class="form" style="display: none" onsubmit="return false">  
+                <h4 id="download_error" style="text-align-last: right" class="text text_form">Please Fill All</h4>             
+                <script  src="./js/script_download.js"></script>
+          </form>
+
+          <form id="download_btn_form" class="form" onsubmit="return false">  
+                <button id="get_list_btn" onclick="openList()" class="btn" type="button" style="display: none">Get List</button>
+                <h1 id="download_loading" style="text-align-last: right; color: tomato" class="text text_form">Please wait.. List Loading</h1>
+          </form>
+      </div>
+
+<!-- partial -->
+<script>
+
+function openList (){
+      document.getElementById("download_list_form").style.display = "block";
+      document.getElementById("download_btn_form").style.display = "none";
+}
+
+function openProfile (){
+      window.location.href = "http://localhost:4000/profile.html";
+}
+
+</script>
+</body>
+</html>
